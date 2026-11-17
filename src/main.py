@@ -36,7 +36,8 @@ def login(session):
 
     for attempt in range(1,MAX_LOGIN_ATEMPTS + 1):
         username = input("Username: ").strip()
-        password = getpass.getpass("Password: ")
+        password = input("Password: ")
+        #password = getpass.getpass("Password: ")
 
         hashed_password = hashlib.sha256(password.encode()).hexdigest()
 
@@ -109,7 +110,7 @@ MENU={
 def run_feature(item, session):
     """ This method loads and executes a selected application feature."""
 
-    if item.needs_records and not session.has_records:
+    if item.needs_record and not session.has_records:
         print("\n  No records loaded. try another option.")
         return
 

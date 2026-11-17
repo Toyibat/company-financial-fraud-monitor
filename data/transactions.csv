@@ -1,0 +1,430 @@
+transaction_id,date,time,transaction_type,payment_method,direction,pay_source_recipient,reference,amount,expected_amount,description,recorded_by,scenario,expected_outcome,approval_required
+TXN0001,2026-01-01,09:28,supplier_payment,bank_transfer,out,Harbour Properties,RENT-202601,250000.00,250000.00,Monthly shop rent,A01,normal,satisfied,no
+TXN0002,2026-01-01,21:35,sale,cash,in,Walk-in customers,CASH-20260101,66771.15,66771.15,Daily cash sales,C01,normal,satisfied,no
+TXN0003,2026-01-01,21:41,sale,card,in,Walk-in customers,POS-20260101,119289.44,119289.44,Daily card sales,C03,normal,satisfied,no
+TXN0004,2026-01-02,09:53,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260101,117500.10,117500.10,Card settlement,BANK,normal,satisfied,no
+TXN0005,2026-01-02,14:39,bank_transfer,cash,in,Own account (cash deposit),CASH-20260101,66771.15,66771.15,Cash deposit,A01,normal,satisfied,no
+TXN0006,2026-01-02,21:00,sale,cash,in,Walk-in customers,CASH-20260102,67956.11,67956.11,Daily cash sales,C01,normal,satisfied,no
+TXN0007,2026-01-02,21:44,sale,card,in,Walk-in customers,POS-20260102,118599.45,118599.45,Daily card sales,C02,normal,satisfied,no
+TXN0008,2026-01-03,21:05,sale,card,in,Walk-in customers,POS-20260103,158943.11,158943.11,Daily card sales,C02,normal,satisfied,no
+TXN0009,2026-01-03,21:21,sale,cash,in,Walk-in customers,CASH-20260103,98230.51,98230.51,Daily cash sales,C01,normal,satisfied,no
+TXN0010,2026-01-04,21:02,sale,cash,in,Walk-in customers,CASH-20260104,44632.75,44632.75,Daily cash sales,C03,normal,satisfied,no
+TXN0011,2026-01-04,21:29,sale,card,in,Walk-in customers,POS-20260104,44977.20,44977.20,Daily card sales,C03,normal,satisfied,no
+TXN0012,2026-01-05,09:35,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260102,116820.46,116820.46,Card settlement,BANK,normal,satisfied,no
+TXN0013,2026-01-05,09:45,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260103,156558.96,156558.96,Card settlement,BANK,normal,satisfied,no
+TXN0014,2026-01-05,09:48,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260104,43218.80,44302.54,Card settlement,BANK,fee_difference,review,no
+TXN0015,2026-01-05,10:49,bank_transfer,cash,in,Own account (cash deposit),CASH-20260103,98230.51,98230.51,Cash deposit,A01,normal,satisfied,no
+TXN0016,2026-01-05,11:03,bank_transfer,cash,in,Own account (cash deposit),CASH-20260104,44632.75,44632.75,Cash deposit,A01,normal,satisfied,no
+TXN0017,2026-01-05,12:54,bank_transfer,cash,in,Own account (cash deposit),CASH-20260102,67956.11,67956.11,Cash deposit,A01,normal,satisfied,no
+TXN0018,2026-01-05,15:44,supplier_payment,bank_transfer,out,Apex Logistics Services,N/A,154998.97,0.00,Service payment,A01,unmatched_payment,investigate,no
+TXN0019,2026-01-05,21:23,sale,card,in,Walk-in customers,POS-20260105,102124.49,102124.49,Daily card sales,C03,normal,satisfied,no
+TXN0020,2026-01-05,21:40,sale,cash,in,Walk-in customers,CASH-20260105,73796.02,73796.02,Daily cash sales,C03,normal,satisfied,no
+TXN0021,2026-01-06,09:05,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260105,100592.62,100592.62,Card settlement,BANK,normal,satisfied,no
+TXN0022,2026-01-06,10:35,bank_transfer,cash,in,Own account (cash deposit),CASH-20260105,61676.77,73796.02,Cash deposit,A01,unexplained_shortfall,investigate,no
+TXN0023,2026-01-06,21:05,sale,cash,in,Walk-in customers,CASH-20260106,54064.80,54064.80,Daily cash sales,C01,normal,satisfied,no
+TXN0024,2026-01-06,21:06,sale,card,in,Walk-in customers,POS-20260106,68694.09,68694.09,Daily card sales,C02,normal,satisfied,no
+TXN0025,2026-01-07,02:56,bank_transfer,bank_transfer,out,Crestline Partners,TRF-0006,352835.88,0.00,Funds transfer,A01,off_hours_transfer,investigate,no
+TXN0026,2026-01-07,09:58,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260106,67663.67,67663.67,Card settlement,BANK,normal,satisfied,no
+TXN0027,2026-01-07,10:14,supplier_payment,bank_transfer,out,Keele_Gadgets,SINV-0001,58737.75,58737.75,Supplier invoice payment,A01,normal,satisfied,no
+TXN0028,2026-01-07,12:22,bank_transfer,cash,in,Own account (cash deposit),CASH-20260106,54064.80,54064.80,Cash deposit,A01,normal,satisfied,no
+TXN0029,2026-01-07,14:13,supplier_payment,bank_transfer,out,Anees_Mobiles,SINV-0002,21257.38,21257.38,Supplier invoice payment,A01,normal,satisfied,no
+TXN0030,2026-01-07,20:33,refund,cash,out,Customer refund,REF-0015,10849.82,0.00,Customer refund - returned item,C03,unauthorized_refund,investigate,no
+TXN0031,2026-01-07,21:13,sale,card,in,Walk-in customers,POS-20260107,82087.32,82087.32,Daily card sales,C03,normal,satisfied,no
+TXN0032,2026-01-07,21:23,sale,cash,in,Walk-in customers,CASH-20260107,57476.17,57476.17,Daily cash sales,C02,normal,satisfied,no
+TXN0033,2026-01-08,10:29,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260107,80856.01,80856.01,Card settlement,BANK,normal,satisfied,no
+TXN0034,2026-01-08,11:29,supplier_payment,bank_transfer,out,Delta Facilities Ltd,N/A,105870.12,0.00,Service payment,A01,unmatched_payment,investigate,no
+TXN0035,2026-01-08,12:16,bank_transfer,cash,in,Own account (cash deposit),CASH-20260107,57476.17,57476.17,Cash deposit,A01,normal,satisfied,no
+TXN0036,2026-01-08,21:10,sale,card,in,Walk-in customers,POS-20260108,84917.88,84917.88,Daily card sales,C03,normal,satisfied,no
+TXN0037,2026-01-08,21:38,sale,cash,in,Walk-in customers,CASH-20260108,80986.22,80986.22,Daily cash sales,C03,normal,satisfied,no
+TXN0038,2026-01-09,09:20,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260108,83644.11,83644.11,Card settlement,BANK,normal,satisfied,no
+TXN0039,2026-01-09,10:13,supplier_payment,bank_transfer,out,Anees_Mobiles,SINV-0002,21257.38,0.00,Supplier invoice payment,A01,duplicate_payment,investigate,no
+TXN0040,2026-01-09,12:05,bank_transfer,cash,in,Own account (cash deposit),CASH-20260108,80986.22,80986.22,Cash deposit,A01,normal,satisfied,no
+TXN0041,2026-01-09,21:35,sale,card,in,Walk-in customers,POS-20260109,98354.25,98354.25,Daily card sales,C01,normal,satisfied,no
+TXN0042,2026-01-09,21:40,sale,cash,in,Walk-in customers,CASH-20260109,55747.13,55747.13,Daily cash sales,C03,normal,satisfied,no
+TXN0043,2026-01-10,21:02,sale,cash,in,Walk-in customers,CASH-20260110,78560.98,78560.98,Daily cash sales,C02,normal,satisfied,no
+TXN0044,2026-01-10,21:25,sale,card,in,Walk-in customers,POS-20260110,106719.51,106719.51,Daily card sales,C02,normal,satisfied,no
+TXN0045,2026-01-11,21:20,sale,cash,in,Walk-in customers,CASH-20260111,46964.30,46964.30,Daily cash sales,C01,normal,satisfied,no
+TXN0046,2026-01-11,21:41,sale,card,in,Walk-in customers,POS-20260111,49744.73,49744.73,Daily card sales,C02,normal,satisfied,no
+TXN0047,2026-01-12,09:27,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260110,105118.72,105118.72,Card settlement,BANK,normal,satisfied,no
+TXN0048,2026-01-12,10:33,bank_transfer,cash,in,Own account (cash deposit),CASH-20260110,78560.98,78560.98,Cash deposit,A01,normal,satisfied,no
+TXN0049,2026-01-12,10:47,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260109,96878.94,96878.94,Card settlement,BANK,normal,satisfied,no
+TXN0050,2026-01-12,10:53,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260111,48998.56,48998.56,Card settlement,BANK,normal,satisfied,no
+TXN0051,2026-01-12,12:46,bank_transfer,cash,in,Own account (cash deposit),CASH-20260109,55747.13,55747.13,Cash deposit,A01,normal,satisfied,no
+TXN0052,2026-01-12,13:22,bank_transfer,cash,in,Own account (cash deposit),CASH-20260111,46964.30,46964.30,Cash deposit,A01,normal,satisfied,no
+TXN0053,2026-01-12,21:15,sale,card,in,Walk-in customers,POS-20260112,84797.01,84797.01,Daily card sales,C03,normal,satisfied,no
+TXN0054,2026-01-12,21:16,sale,cash,in,Walk-in customers,CASH-20260112,76427.28,76427.28,Daily cash sales,C01,normal,satisfied,no
+TXN0055,2026-01-13,10:35,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260112,83525.05,83525.05,Card settlement,BANK,normal,satisfied,no
+TXN0056,2026-01-13,12:14,bank_transfer,cash,in,Own account (cash deposit),CASH-20260112,57388.13,76427.28,Cash deposit,A01,unexplained_shortfall,investigate,no
+TXN0057,2026-01-13,21:14,sale,card,in,Walk-in customers,POS-20260113,75515.38,75515.38,Daily card sales,C01,normal,satisfied,no
+TXN0058,2026-01-13,21:25,sale,cash,in,Walk-in customers,CASH-20260113,42904.56,42904.56,Daily cash sales,C02,normal,satisfied,no
+TXN0059,2026-01-14,10:03,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260113,74382.65,74382.65,Card settlement,BANK,normal,satisfied,no
+TXN0060,2026-01-14,10:05,supplier_payment,bank_transfer,out,Nokia_Retails,SINV-0005,17028.79,17028.79,Supplier invoice payment,A01,normal,satisfied,no
+TXN0061,2026-01-14,12:23,supplier_payment,bank_transfer,out,Side_Quest_electronics,SINV-0003,181072.10,181072.10,Supplier invoice payment,A01,normal,satisfied,no
+TXN0062,2026-01-14,14:20,bank_transfer,cash,in,Own account (cash deposit),CASH-20260113,42904.56,42904.56,Cash deposit,A01,normal,satisfied,no
+TXN0063,2026-01-14,15:05,supplier_payment,bank_transfer,out,Keele_Gadgets,SINV-0004,79171.45,79171.45,Supplier invoice payment,A01,normal,satisfied,no
+TXN0064,2026-01-14,21:07,sale,cash,in,Walk-in customers,CASH-20260114,68136.37,68136.37,Daily cash sales,C01,normal,satisfied,no
+TXN0065,2026-01-14,21:40,sale,card,in,Walk-in customers,POS-20260114,98023.45,98023.45,Daily card sales,C01,normal,satisfied,no
+TXN0066,2026-01-15,09:49,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260114,94918.63,96553.10,Card settlement,BANK,fee_difference,review,no
+TXN0067,2026-01-15,13:36,bank_transfer,cash,in,Own account (cash deposit),CASH-20260114,68136.37,68136.37,Cash deposit,A01,normal,satisfied,no
+TXN0068,2026-01-15,21:33,sale,cash,in,Walk-in customers,CASH-20260115,35572.87,35572.87,Daily cash sales,C02,normal,satisfied,no
+TXN0069,2026-01-15,21:35,sale,card,in,Walk-in customers,POS-20260115,135613.71,135613.71,Daily card sales,C01,normal,satisfied,no
+TXN0070,2026-01-16,10:08,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260115,131090.36,133579.51,Card settlement,BANK,fee_difference,review,no
+TXN0071,2026-01-16,10:58,bank_transfer,cash,in,Own account (cash deposit),CASH-20260115,35572.87,35572.87,Cash deposit,A01,normal,satisfied,no
+TXN0072,2026-01-16,13:00,bank_transfer,bank_transfer,out,Kestrel Holdings,TRF-0001,2000310.43,0.00,Funds transfer,A01,large_transfer,investigate,no
+TXN0073,2026-01-16,17:19,refund,card,out,Customer refund,REF-0001,5370.75,5370.75,Customer refund - returned item,C01,normal,satisfied,no
+TXN0074,2026-01-16,21:18,sale,card,in,Walk-in customers,POS-20260116,64204.14,64204.14,Daily card sales,C02,normal,satisfied,no
+TXN0075,2026-01-16,21:21,sale,cash,in,Walk-in customers,CASH-20260116,65113.24,65113.24,Daily cash sales,C01,normal,satisfied,no
+TXN0076,2026-01-17,21:11,sale,card,in,Walk-in customers,POS-20260117,114704.79,114704.79,Daily card sales,C03,normal,satisfied,no
+TXN0077,2026-01-17,21:16,sale,cash,in,Walk-in customers,CASH-20260117,101039.40,101039.40,Daily cash sales,C03,normal,satisfied,no
+TXN0078,2026-01-18,21:12,sale,card,in,Walk-in customers,POS-20260118,42310.32,42310.32,Daily card sales,C01,normal,satisfied,no
+TXN0079,2026-01-18,21:32,sale,cash,in,Walk-in customers,CASH-20260118,29243.76,29243.76,Daily cash sales,C03,normal,satisfied,no
+TXN0080,2026-01-19,09:58,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260116,63241.07,63241.07,Card settlement,BANK,normal,satisfied,no
+TXN0081,2026-01-19,10:09,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260118,40831.73,41675.67,Card settlement,BANK,fee_difference,review,no
+TXN0082,2026-01-19,10:51,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260117,112984.22,112984.22,Card settlement,BANK,normal,satisfied,no
+TXN0083,2026-01-19,10:54,bank_transfer,cash,in,Own account (cash deposit),CASH-20260117,101039.40,101039.40,Cash deposit,A01,normal,satisfied,no
+TXN0084,2026-01-19,11:20,bank_transfer,cash,in,Own account (cash deposit),CASH-20260116,65113.24,65113.24,Cash deposit,A01,normal,satisfied,no
+TXN0085,2026-01-19,13:11,bank_transfer,cash,in,Own account (cash deposit),CASH-20260118,29243.76,29243.76,Cash deposit,A01,normal,satisfied,no
+TXN0086,2026-01-19,21:00,sale,cash,in,Walk-in customers,CASH-20260119,90985.06,90985.06,Daily cash sales,C03,normal,satisfied,no
+TXN0087,2026-01-19,21:20,sale,card,in,Walk-in customers,POS-20260119,83276.43,83276.43,Daily card sales,C02,normal,satisfied,no
+TXN0088,2026-01-20,09:14,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260119,82027.28,82027.28,Card settlement,BANK,normal,satisfied,no
+TXN0089,2026-01-20,10:09,bank_transfer,cash,in,Own account (cash deposit),CASH-20260119,90985.06,90985.06,Cash deposit,A01,normal,satisfied,no
+TXN0090,2026-01-20,21:03,sale,card,in,Walk-in customers,POS-20260120,79068.08,79068.08,Daily card sales,C01,normal,satisfied,no
+TXN0091,2026-01-20,21:19,sale,cash,in,Walk-in customers,CASH-20260120,87243.49,87243.49,Daily cash sales,C01,normal,satisfied,no
+TXN0092,2026-01-21,09:10,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260120,77882.06,77882.06,Card settlement,BANK,normal,satisfied,no
+TXN0093,2026-01-21,13:28,supplier_payment,bank_transfer,out,Apple_LTD,SINV-0006,97001.20,97001.20,Supplier invoice payment,A01,normal,satisfied,no
+TXN0094,2026-01-21,14:50,bank_transfer,cash,in,Own account (cash deposit),CASH-20260120,87243.49,87243.49,Cash deposit,A01,normal,satisfied,no
+TXN0095,2026-01-21,15:53,supplier_payment,bank_transfer,out,Side_Quest_electronics,SINV-0007,132776.21,132776.21,Supplier invoice payment,A01,normal,satisfied,no
+TXN0096,2026-01-21,21:04,sale,cash,in,Walk-in customers,CASH-20260121,76887.44,76887.44,Daily cash sales,C03,normal,satisfied,no
+TXN0097,2026-01-21,21:08,sale,card,in,Walk-in customers,POS-20260121,105644.37,105644.37,Daily card sales,C01,normal,satisfied,no
+TXN0098,2026-01-22,10:10,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260121,104059.71,104059.71,Card settlement,BANK,normal,satisfied,no
+TXN0099,2026-01-22,14:03,bank_transfer,cash,in,Own account (cash deposit),CASH-20260121,76887.44,76887.44,Cash deposit,A01,normal,satisfied,no
+TXN0100,2026-01-22,21:13,sale,card,in,Walk-in customers,POS-20260122,113985.44,113985.44,Daily card sales,C03,normal,satisfied,no
+TXN0101,2026-01-22,21:38,sale,cash,in,Walk-in customers,CASH-20260122,72471.68,72471.68,Daily cash sales,C02,normal,satisfied,no
+TXN0102,2026-01-23,10:31,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260122,112275.65,112275.65,Card settlement,BANK,normal,satisfied,no
+TXN0103,2026-01-23,11:42,bank_transfer,cash,in,Own account (cash deposit),CASH-20260122,72471.68,72471.68,Cash deposit,A01,normal,satisfied,no
+TXN0104,2026-01-23,21:28,sale,card,in,Walk-in customers,POS-20260123,149398.99,149398.99,Daily card sales,C03,normal,satisfied,no
+TXN0105,2026-01-23,21:41,sale,cash,in,Walk-in customers,CASH-20260123,50186.93,50186.93,Daily cash sales,C02,normal,satisfied,no
+TXN0106,2026-01-24,21:01,sale,cash,in,Walk-in customers,CASH-20260124,78068.93,78068.93,Daily cash sales,C03,normal,satisfied,no
+TXN0107,2026-01-24,21:35,sale,card,in,Walk-in customers,POS-20260124,121856.94,121856.94,Daily card sales,C01,normal,satisfied,no
+TXN0108,2026-01-25,21:02,sale,card,in,Walk-in customers,POS-20260125,63580.14,63580.14,Daily card sales,C02,normal,satisfied,no
+TXN0109,2026-01-25,21:05,refund,cash,out,Customer refund,REF-0016,9834.19,0.00,Customer refund - returned item,C03,unauthorized_refund,investigate,no
+TXN0110,2026-01-25,21:14,sale,cash,in,Walk-in customers,CASH-20260125,48173.33,48173.33,Daily cash sales,C01,normal,satisfied,no
+TXN0111,2026-01-26,09:00,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260124,120029.09,120029.09,Card settlement,BANK,normal,satisfied,no
+TXN0112,2026-01-26,09:15,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260123,147158.01,147158.01,Card settlement,BANK,normal,satisfied,no
+TXN0113,2026-01-26,10:05,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260125,62626.44,62626.44,Card settlement,BANK,normal,satisfied,no
+TXN0114,2026-01-26,10:36,bank_transfer,cash,in,Own account (cash deposit),CASH-20260125,48173.33,48173.33,Cash deposit,A01,normal,satisfied,no
+TXN0115,2026-01-26,11:52,bank_transfer,cash,in,Own account (cash deposit),CASH-20260124,78068.93,78068.93,Cash deposit,A01,normal,satisfied,no
+TXN0116,2026-01-26,13:51,bank_transfer,cash,in,Own account (cash deposit),CASH-20260123,50186.93,50186.93,Cash deposit,A01,normal,satisfied,no
+TXN0117,2026-01-26,21:08,sale,card,in,Walk-in customers,POS-20260126,121689.84,121689.84,Daily card sales,C03,normal,satisfied,no
+TXN0118,2026-01-26,21:13,sale,cash,in,Walk-in customers,CASH-20260126,66343.60,66343.60,Daily cash sales,C03,normal,satisfied,no
+TXN0119,2026-01-27,10:13,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260126,119864.49,119864.49,Card settlement,BANK,normal,satisfied,no
+TXN0120,2026-01-27,14:52,bank_transfer,cash,in,Own account (cash deposit),CASH-20260126,66343.60,66343.60,Cash deposit,A01,normal,satisfied,no
+TXN0121,2026-01-27,21:06,sale,card,in,Walk-in customers,POS-20260127,100389.62,100389.62,Daily card sales,C01,normal,satisfied,no
+TXN0122,2026-01-27,21:26,sale,cash,in,Walk-in customers,CASH-20260127,44281.16,44281.16,Daily cash sales,C01,normal,satisfied,no
+TXN0123,2026-01-28,09:45,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260127,98883.77,98883.77,Card settlement,BANK,normal,satisfied,no
+TXN0124,2026-01-28,10:08,supplier_payment,bank_transfer,out,Nokia_Retails,SINV-0008,18483.28,18483.28,Supplier invoice payment,A01,normal,satisfied,no
+TXN0125,2026-01-28,12:04,supplier_payment,bank_transfer,out,Anees_Mobiles,SINV-0010,27344.01,27344.01,Supplier invoice payment,A01,normal,satisfied,no
+TXN0126,2026-01-28,13:40,bank_transfer,cash,in,Own account (cash deposit),CASH-20260127,44281.16,44281.16,Cash deposit,A01,normal,satisfied,no
+TXN0127,2026-01-28,15:54,supplier_payment,bank_transfer,out,Keele_Gadgets,SINV-0009,78853.80,78853.80,Supplier invoice payment,A01,normal,satisfied,no
+TXN0128,2026-01-28,21:03,sale,cash,in,Walk-in customers,CASH-20260128,53060.09,53060.09,Daily cash sales,C03,normal,satisfied,no
+TXN0129,2026-01-28,21:41,sale,card,in,Walk-in customers,POS-20260128,104327.93,104327.93,Daily card sales,C03,normal,satisfied,no
+TXN0130,2026-01-29,10:33,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260128,102763.01,102763.01,Card settlement,BANK,normal,satisfied,no
+TXN0131,2026-01-29,12:24,bank_transfer,bank_transfer,out,Unlisted Trading Co,TRF-0003,2146783.71,0.00,Funds transfer,A01,large_transfer,investigate,no
+TXN0132,2026-01-29,13:26,bank_transfer,cash,in,Own account (cash deposit),CASH-20260128,45491.81,53060.09,Cash deposit,A01,unexplained_shortfall,investigate,no
+TXN0133,2026-01-29,14:30,refund,cash,out,Customer refund,REF-0007,4593.23,4593.23,Customer refund - returned item,C02,normal,satisfied,no
+TXN0134,2026-01-29,21:12,sale,card,in,Walk-in customers,POS-20260129,125312.94,125312.94,Daily card sales,C03,normal,satisfied,no
+TXN0135,2026-01-29,21:15,sale,cash,in,Walk-in customers,CASH-20260129,52299.09,52299.09,Daily cash sales,C01,normal,satisfied,no
+TXN0136,2026-01-30,09:23,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260129,122470.02,123433.25,Card settlement,BANK,fee_difference,review,no
+TXN0137,2026-01-30,13:49,bank_transfer,cash,in,Own account (cash deposit),CASH-20260129,52299.09,52299.09,Cash deposit,A01,normal,satisfied,no
+TXN0138,2026-01-30,21:04,sale,cash,in,Walk-in customers,CASH-20260130,63376.92,63376.92,Daily cash sales,C02,normal,satisfied,no
+TXN0139,2026-01-30,21:35,sale,card,in,Walk-in customers,POS-20260130,108428.46,108428.46,Daily card sales,C01,normal,satisfied,no
+TXN0140,2026-01-31,21:05,sale,cash,in,Walk-in customers,CASH-20260131,105382.88,105382.88,Daily cash sales,C01,normal,satisfied,no
+TXN0141,2026-01-31,21:10,sale,card,in,Walk-in customers,POS-20260131,113814.82,113814.82,Daily card sales,C02,normal,satisfied,no
+TXN0142,2026-02-01,09:19,supplier_payment,bank_transfer,out,Harbour Properties,RENT-202602,250000.00,250000.00,Monthly shop rent,A01,normal,satisfied,no
+TXN0143,2026-02-01,21:03,sale,cash,in,Walk-in customers,CASH-20260201,40646.18,40646.18,Daily cash sales,C01,normal,satisfied,no
+TXN0144,2026-02-01,21:24,sale,card,in,Walk-in customers,POS-20260201,67652.37,67652.37,Daily card sales,C01,normal,satisfied,no
+TXN0145,2026-02-02,10:01,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260131,112107.60,112107.60,Card settlement,BANK,normal,satisfied,no
+TXN0146,2026-02-02,10:23,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260130,106802.03,106802.03,Card settlement,BANK,normal,satisfied,no
+TXN0147,2026-02-02,10:25,bank_transfer,cash,in,Own account (cash deposit),CASH-20260130,63376.92,63376.92,Cash deposit,A01,normal,satisfied,no
+TXN0148,2026-02-02,10:40,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260201,65950.94,66637.58,Card settlement,BANK,fee_difference,review,no
+TXN0149,2026-02-02,13:19,bank_transfer,cash,in,Own account (cash deposit),CASH-20260201,40646.18,40646.18,Cash deposit,A01,normal,satisfied,no
+TXN0150,2026-02-02,14:08,bank_transfer,cash,in,Own account (cash deposit),CASH-20260131,105382.88,105382.88,Cash deposit,A01,normal,satisfied,no
+TXN0151,2026-02-02,21:35,sale,card,in,Walk-in customers,POS-20260202,80606.20,80606.20,Daily card sales,C03,normal,satisfied,no
+TXN0152,2026-02-02,21:44,sale,cash,in,Walk-in customers,CASH-20260202,67153.12,67153.12,Daily cash sales,C03,normal,satisfied,no
+TXN0153,2026-02-03,09:19,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260202,79397.11,79397.11,Card settlement,BANK,normal,satisfied,no
+TXN0154,2026-02-03,14:09,bank_transfer,cash,in,Own account (cash deposit),CASH-20260202,67153.12,67153.12,Cash deposit,A01,normal,satisfied,no
+TXN0155,2026-02-03,21:03,sale,cash,in,Walk-in customers,CASH-20260203,68100.53,68100.53,Daily cash sales,C03,normal,satisfied,no
+TXN0156,2026-02-03,21:34,sale,card,in,Walk-in customers,POS-20260203,106724.58,106724.58,Daily card sales,C01,normal,satisfied,no
+TXN0157,2026-02-04,09:07,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260203,105123.71,105123.71,Card settlement,BANK,normal,satisfied,no
+TXN0158,2026-02-04,12:08,supplier_payment,bank_transfer,out,Argos,SINV-0013,85359.00,85359.00,Supplier invoice payment,A01,normal,satisfied,no
+TXN0159,2026-02-04,12:40,bank_transfer,cash,in,Own account (cash deposit),CASH-20260203,68100.53,68100.53,Cash deposit,A01,normal,satisfied,no
+TXN0160,2026-02-04,12:49,supplier_payment,bank_transfer,out,Keele_Gadgets,SINV-0011,47839.91,47839.91,Supplier invoice payment,A01,normal,satisfied,no
+TXN0161,2026-02-04,13:00,supplier_payment,bank_transfer,out,Anees_Mobiles,SINV-0012,29481.17,29481.17,Supplier invoice payment,A01,normal,satisfied,no
+TXN0162,2026-02-04,21:03,sale,card,in,Walk-in customers,POS-20260204,101348.54,101348.54,Daily card sales,C03,normal,satisfied,no
+TXN0163,2026-02-04,21:33,sale,cash,in,Walk-in customers,CASH-20260204,77986.33,77986.33,Daily cash sales,C01,normal,satisfied,no
+TXN0164,2026-02-05,10:41,bank_transfer,cash,in,Own account (cash deposit),CASH-20260204,77986.33,77986.33,Cash deposit,A01,normal,satisfied,no
+TXN0165,2026-02-05,10:48,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260204,99828.31,99828.31,Card settlement,BANK,normal,satisfied,no
+TXN0166,2026-02-05,21:25,sale,card,in,Walk-in customers,POS-20260205,117261.51,117261.51,Daily card sales,C01,normal,satisfied,no
+TXN0167,2026-02-05,21:43,sale,cash,in,Walk-in customers,CASH-20260205,71331.15,71331.15,Daily cash sales,C01,normal,satisfied,no
+TXN0168,2026-02-06,10:16,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260205,114356.31,115502.59,Card settlement,BANK,fee_difference,review,no
+TXN0169,2026-02-06,14:51,bank_transfer,cash,in,Own account (cash deposit),CASH-20260205,71331.15,71331.15,Cash deposit,A01,normal,satisfied,no
+TXN0170,2026-02-06,21:36,sale,card,in,Walk-in customers,POS-20260206,96839.82,96839.82,Daily card sales,C03,normal,satisfied,no
+TXN0171,2026-02-06,21:42,sale,cash,in,Walk-in customers,CASH-20260206,69809.48,69809.48,Daily cash sales,C03,normal,satisfied,no
+TXN0172,2026-02-07,21:16,sale,card,in,Walk-in customers,POS-20260207,146078.31,146078.31,Daily card sales,C02,normal,satisfied,no
+TXN0173,2026-02-07,21:20,sale,cash,in,Walk-in customers,CASH-20260207,76551.21,76551.21,Daily cash sales,C01,normal,satisfied,no
+TXN0174,2026-02-08,18:25,refund,card,out,Customer refund,REF-0012,3752.12,3752.12,Customer refund - returned item,C01,normal,satisfied,no
+TXN0175,2026-02-08,21:04,sale,cash,in,Walk-in customers,CASH-20260208,34141.34,34141.34,Daily cash sales,C01,normal,satisfied,no
+TXN0176,2026-02-08,21:29,sale,card,in,Walk-in customers,POS-20260208,47543.09,47543.09,Daily card sales,C03,normal,satisfied,no
+TXN0177,2026-02-09,09:12,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260208,46829.94,46829.94,Card settlement,BANK,normal,satisfied,no
+TXN0178,2026-02-09,10:25,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260207,143887.14,143887.14,Card settlement,BANK,normal,satisfied,no
+TXN0179,2026-02-09,10:59,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260206,95387.22,95387.22,Card settlement,BANK,normal,satisfied,no
+TXN0180,2026-02-09,11:07,bank_transfer,cash,in,Own account (cash deposit),CASH-20260207,76551.21,76551.21,Cash deposit,A01,normal,satisfied,no
+TXN0181,2026-02-09,12:41,bank_transfer,cash,in,Own account (cash deposit),CASH-20260206,69809.48,69809.48,Cash deposit,A01,normal,satisfied,no
+TXN0182,2026-02-09,14:48,bank_transfer,cash,in,Own account (cash deposit),CASH-20260208,34141.34,34141.34,Cash deposit,A01,normal,satisfied,no
+TXN0183,2026-02-09,21:16,sale,cash,in,Walk-in customers,CASH-20260209,72444.20,72444.20,Daily cash sales,C01,normal,satisfied,no
+TXN0184,2026-02-09,21:22,sale,card,in,Walk-in customers,POS-20260209,100536.65,100536.65,Daily card sales,C01,normal,satisfied,no
+TXN0185,2026-02-10,09:47,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260209,99028.60,99028.60,Card settlement,BANK,normal,satisfied,no
+TXN0186,2026-02-10,12:05,bank_transfer,cash,in,Own account (cash deposit),CASH-20260209,72444.20,72444.20,Cash deposit,A01,normal,satisfied,no
+TXN0187,2026-02-10,21:19,sale,card,in,Walk-in customers,POS-20260210,113864.20,113864.20,Daily card sales,C03,normal,satisfied,no
+TXN0188,2026-02-10,21:34,sale,cash,in,Walk-in customers,CASH-20260210,62189.95,62189.95,Daily cash sales,C03,normal,satisfied,no
+TXN0189,2026-02-11,09:01,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260210,112156.24,112156.24,Card settlement,BANK,normal,satisfied,no
+TXN0190,2026-02-11,12:41,supplier_payment,bank_transfer,out,Apple_LTD,SINV-0014,97190.40,97190.40,Supplier invoice payment,A01,normal,satisfied,no
+TXN0191,2026-02-11,14:30,bank_transfer,cash,in,Own account (cash deposit),CASH-20260210,62189.95,62189.95,Cash deposit,A01,normal,satisfied,no
+TXN0192,2026-02-11,15:53,supplier_payment,bank_transfer,out,Side_Quest_electronics,SINV-0015,236222.86,236222.86,Supplier invoice payment,A01,normal,satisfied,no
+TXN0193,2026-02-11,21:08,sale,card,in,Walk-in customers,POS-20260211,75088.49,75088.49,Daily card sales,C02,normal,satisfied,no
+TXN0194,2026-02-11,21:42,sale,cash,in,Walk-in customers,CASH-20260211,57468.55,57468.55,Daily cash sales,C01,normal,satisfied,no
+TXN0195,2026-02-12,10:53,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260211,73962.16,73962.16,Card settlement,BANK,normal,satisfied,no
+TXN0196,2026-02-12,10:59,bank_transfer,cash,in,Own account (cash deposit),CASH-20260211,57468.55,57468.55,Cash deposit,A01,normal,satisfied,no
+TXN0197,2026-02-12,11:57,supplier_payment,bank_transfer,out,Apple_LTD,SINV-0014,97190.40,0.00,Supplier invoice payment,A01,duplicate_payment,investigate,no
+TXN0198,2026-02-12,21:17,sale,cash,in,Walk-in customers,CASH-20260212,76915.92,76915.92,Daily cash sales,C02,normal,satisfied,no
+TXN0199,2026-02-12,21:38,sale,card,in,Walk-in customers,POS-20260212,109234.32,109234.32,Daily card sales,C01,normal,satisfied,no
+TXN0200,2026-02-13,09:26,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260212,107595.81,107595.81,Card settlement,BANK,normal,satisfied,no
+TXN0201,2026-02-13,12:55,bank_transfer,cash,in,Own account (cash deposit),CASH-20260212,76915.92,76915.92,Cash deposit,A01,normal,satisfied,no
+TXN0202,2026-02-13,21:16,sale,card,in,Walk-in customers,POS-20260213,62440.33,62440.33,Daily card sales,C01,normal,satisfied,no
+TXN0203,2026-02-13,21:32,sale,cash,in,Walk-in customers,CASH-20260213,56008.44,56008.44,Daily cash sales,C02,normal,satisfied,no
+TXN0204,2026-02-14,21:00,sale,cash,in,Walk-in customers,CASH-20260214,67720.68,67720.68,Daily cash sales,C02,normal,satisfied,no
+TXN0205,2026-02-14,21:08,sale,card,in,Walk-in customers,POS-20260214,122030.96,122030.96,Daily card sales,C03,normal,satisfied,no
+TXN0206,2026-02-15,21:00,sale,card,in,Walk-in customers,POS-20260215,43340.53,43340.53,Daily card sales,C01,normal,satisfied,no
+TXN0207,2026-02-15,21:27,sale,cash,in,Walk-in customers,CASH-20260215,38497.75,38497.75,Daily cash sales,C03,normal,satisfied,no
+TXN0208,2026-02-16,09:20,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260214,120200.50,120200.50,Card settlement,BANK,normal,satisfied,no
+TXN0209,2026-02-16,09:30,bank_transfer,bank_transfer,out,Zenith Ventures,TRF-0007,473361.73,0.00,Funds transfer,A01,structuring,investigate,no
+TXN0210,2026-02-16,10:21,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260213,61503.72,61503.72,Card settlement,BANK,normal,satisfied,no
+TXN0211,2026-02-16,10:38,bank_transfer,cash,in,Own account (cash deposit),CASH-20260215,38497.75,38497.75,Cash deposit,A01,normal,satisfied,no
+TXN0212,2026-02-16,10:47,bank_transfer,cash,in,Own account (cash deposit),CASH-20260213,56008.44,56008.44,Cash deposit,A01,normal,satisfied,no
+TXN0213,2026-02-16,10:53,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260215,42690.42,42690.42,Card settlement,BANK,normal,satisfied,no
+TXN0214,2026-02-16,11:15,bank_transfer,bank_transfer,out,Zenith Ventures,TRF-0008,492403.89,0.00,Funds transfer,A01,structuring,investigate,no
+TXN0215,2026-02-16,12:14,bank_transfer,cash,in,Own account (cash deposit),CASH-20260214,67720.68,67720.68,Cash deposit,A01,normal,satisfied,no
+TXN0216,2026-02-16,14:00,bank_transfer,bank_transfer,out,Zenith Ventures,TRF-0009,495082.41,0.00,Funds transfer,A01,structuring,investigate,no
+TXN0217,2026-02-16,21:02,sale,cash,in,Walk-in customers,CASH-20260216,62530.79,62530.79,Daily cash sales,C02,normal,satisfied,no
+TXN0218,2026-02-16,21:14,refund,cash,out,Customer refund,REF-0018,14785.97,0.00,Customer refund - returned item,C03,unauthorized_refund,investigate,no
+TXN0219,2026-02-16,21:37,sale,card,in,Walk-in customers,POS-20260216,85467.24,85467.24,Daily card sales,C03,normal,satisfied,no
+TXN0220,2026-02-17,09:55,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260216,84185.24,84185.24,Card settlement,BANK,normal,satisfied,no
+TXN0221,2026-02-17,11:15,bank_transfer,cash,in,Own account (cash deposit),CASH-20260216,62530.79,62530.79,Cash deposit,A01,normal,satisfied,no
+TXN0222,2026-02-17,21:02,sale,cash,in,Walk-in customers,CASH-20260217,72172.13,72172.13,Daily cash sales,C02,normal,satisfied,no
+TXN0223,2026-02-17,21:13,sale,card,in,Walk-in customers,POS-20260217,106094.00,106094.00,Daily card sales,C03,normal,satisfied,no
+TXN0224,2026-02-18,10:25,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260217,104502.59,104502.59,Card settlement,BANK,normal,satisfied,no
+TXN0225,2026-02-18,11:13,refund,cash,out,Customer refund,REF-0009,5219.84,5219.84,Customer refund - returned item,C01,normal,satisfied,no
+TXN0226,2026-02-18,12:07,bank_transfer,cash,in,Own account (cash deposit),CASH-20260217,72172.13,72172.13,Cash deposit,A01,normal,satisfied,no
+TXN0227,2026-02-18,14:07,supplier_payment,bank_transfer,out,Side_Quest_electronics,SINV-0016,233825.33,233825.33,Supplier invoice payment,A01,normal,satisfied,no
+TXN0228,2026-02-18,14:28,supplier_payment,bank_transfer,out,Nokia_Retails,SINV-0017,17115.24,17115.24,Supplier invoice payment,A01,normal,satisfied,no
+TXN0229,2026-02-18,21:09,sale,card,in,Walk-in customers,POS-20260218,113856.67,113856.67,Daily card sales,C01,normal,satisfied,no
+TXN0230,2026-02-18,21:26,sale,cash,in,Walk-in customers,CASH-20260218,81678.97,81678.97,Daily cash sales,C03,normal,satisfied,no
+TXN0231,2026-02-19,10:42,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260218,112148.82,112148.82,Card settlement,BANK,normal,satisfied,no
+TXN0232,2026-02-19,11:23,bank_transfer,cash,in,Own account (cash deposit),CASH-20260218,81678.97,81678.97,Cash deposit,A01,normal,satisfied,no
+TXN0233,2026-02-19,21:01,sale,cash,in,Walk-in customers,CASH-20260219,74233.79,74233.79,Daily cash sales,C01,normal,satisfied,no
+TXN0234,2026-02-19,21:21,sale,card,in,Walk-in customers,POS-20260219,60506.78,60506.78,Daily card sales,C02,normal,satisfied,no
+TXN0235,2026-02-20,09:34,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260219,59599.17,59599.17,Card settlement,BANK,normal,satisfied,no
+TXN0236,2026-02-20,12:07,bank_transfer,cash,in,Own account (cash deposit),CASH-20260219,74233.79,74233.79,Cash deposit,A01,normal,satisfied,no
+TXN0237,2026-02-20,21:24,sale,cash,in,Walk-in customers,CASH-20260220,75074.60,75074.60,Daily cash sales,C01,normal,satisfied,no
+TXN0238,2026-02-20,21:30,sale,card,in,Walk-in customers,POS-20260220,118549.35,118549.35,Daily card sales,C01,normal,satisfied,no
+TXN0239,2026-02-21,21:01,sale,card,in,Walk-in customers,POS-20260221,104176.76,104176.76,Daily card sales,C03,normal,satisfied,no
+TXN0240,2026-02-21,21:14,sale,cash,in,Walk-in customers,CASH-20260221,89642.56,89642.56,Daily cash sales,C01,normal,satisfied,no
+TXN0241,2026-02-22,21:10,refund,cash,out,Customer refund,REF-0014,14188.57,0.00,Customer refund - returned item,C03,unauthorized_refund,investigate,no
+TXN0242,2026-02-22,21:17,sale,cash,in,Walk-in customers,CASH-20260222,32204.87,32204.87,Daily cash sales,C02,normal,satisfied,no
+TXN0243,2026-02-22,21:41,sale,card,in,Walk-in customers,POS-20260222,76029.77,76029.77,Daily card sales,C03,normal,satisfied,no
+TXN0244,2026-02-23,09:51,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260221,102614.11,102614.11,Card settlement,BANK,normal,satisfied,no
+TXN0245,2026-02-23,10:26,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260222,74889.33,74889.33,Card settlement,BANK,normal,satisfied,no
+TXN0246,2026-02-23,10:44,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260220,116771.11,116771.11,Card settlement,BANK,normal,satisfied,no
+TXN0247,2026-02-23,11:23,refund,cash,out,Customer refund,REF-0003,2690.91,2690.91,Customer refund - returned item,C01,normal,satisfied,no
+TXN0248,2026-02-23,11:38,bank_transfer,cash,in,Own account (cash deposit),CASH-20260221,89642.56,89642.56,Cash deposit,A01,normal,satisfied,no
+TXN0249,2026-02-23,11:42,bank_transfer,cash,in,Own account (cash deposit),CASH-20260220,75074.60,75074.60,Cash deposit,A01,normal,satisfied,no
+TXN0250,2026-02-23,13:24,bank_transfer,cash,in,Own account (cash deposit),CASH-20260222,32204.87,32204.87,Cash deposit,A01,normal,satisfied,no
+TXN0251,2026-02-23,21:01,sale,cash,in,Walk-in customers,CASH-20260223,79771.29,79771.29,Daily cash sales,C01,normal,satisfied,no
+TXN0252,2026-02-23,21:16,sale,card,in,Walk-in customers,POS-20260223,92363.39,92363.39,Daily card sales,C01,normal,satisfied,no
+TXN0253,2026-02-24,09:33,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260223,90977.94,90977.94,Card settlement,BANK,normal,satisfied,no
+TXN0254,2026-02-24,14:57,bank_transfer,cash,in,Own account (cash deposit),CASH-20260223,79771.29,79771.29,Cash deposit,A01,normal,satisfied,no
+TXN0255,2026-02-24,21:20,sale,card,in,Walk-in customers,POS-20260224,100773.97,100773.97,Daily card sales,C02,normal,satisfied,no
+TXN0256,2026-02-24,21:22,sale,cash,in,Walk-in customers,CASH-20260224,80704.02,80704.02,Daily cash sales,C03,normal,satisfied,no
+TXN0257,2026-02-25,09:14,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260224,99262.36,99262.36,Card settlement,BANK,normal,satisfied,no
+TXN0258,2026-02-25,11:04,supplier_payment,bank_transfer,out,Argos,SINV-0020,103014.51,103014.51,Supplier invoice payment,A01,normal,satisfied,no
+TXN0259,2026-02-25,11:56,supplier_payment,bank_transfer,out,Apple_LTD,SINV-0018,159484.57,159484.57,Supplier invoice payment,A01,normal,satisfied,no
+TXN0260,2026-02-25,14:21,bank_transfer,cash,in,Own account (cash deposit),CASH-20260224,59767.14,80704.02,Cash deposit,A01,unexplained_shortfall,investigate,no
+TXN0261,2026-02-25,14:33,supplier_payment,bank_transfer,out,Side_Quest_electronics,SINV-0019,178223.10,178223.10,Supplier invoice payment,A01,normal,satisfied,no
+TXN0262,2026-02-25,21:16,sale,cash,in,Walk-in customers,CASH-20260225,53186.15,53186.15,Daily cash sales,C01,normal,satisfied,no
+TXN0263,2026-02-25,21:27,sale,card,in,Walk-in customers,POS-20260225,110584.34,110584.34,Daily card sales,C01,normal,satisfied,no
+TXN0264,2026-02-26,10:58,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260225,108925.57,108925.57,Card settlement,BANK,normal,satisfied,no
+TXN0265,2026-02-26,14:26,bank_transfer,cash,in,Own account (cash deposit),CASH-20260225,53186.15,53186.15,Cash deposit,A01,normal,satisfied,no
+TXN0266,2026-02-26,15:11,refund,card,out,Customer refund,REF-0011,3609.14,3609.14,Customer refund - returned item,C02,normal,satisfied,no
+TXN0267,2026-02-26,21:23,sale,card,in,Walk-in customers,POS-20260226,69281.26,69281.26,Daily card sales,C02,normal,satisfied,no
+TXN0268,2026-02-26,21:42,sale,cash,in,Walk-in customers,CASH-20260226,71357.38,71357.38,Daily cash sales,C01,normal,satisfied,no
+TXN0269,2026-02-27,09:30,bank_transfer,bank_transfer,out,Zenith Ventures,TRF-0010,493922.89,0.00,Funds transfer,A01,structuring,investigate,no
+TXN0270,2026-02-27,10:25,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260226,68242.04,68242.04,Card settlement,BANK,normal,satisfied,no
+TXN0271,2026-02-27,10:35,bank_transfer,cash,in,Own account (cash deposit),CASH-20260226,71357.38,71357.38,Cash deposit,A01,normal,satisfied,no
+TXN0272,2026-02-27,11:15,bank_transfer,bank_transfer,out,Zenith Ventures,TRF-0011,470033.38,0.00,Funds transfer,A01,structuring,investigate,no
+TXN0273,2026-02-27,14:00,bank_transfer,bank_transfer,out,Zenith Ventures,TRF-0012,495211.66,0.00,Funds transfer,A01,structuring,investigate,no
+TXN0274,2026-02-27,14:55,refund,card,out,Customer refund,REF-0010,5066.83,5066.83,Customer refund - returned item,C01,normal,satisfied,no
+TXN0275,2026-02-27,15:09,supplier_payment,bank_transfer,out,Argos,SINV-0020,103014.51,0.00,Supplier invoice payment,A01,duplicate_payment,investigate,no
+TXN0276,2026-02-27,21:19,sale,card,in,Walk-in customers,POS-20260227,82991.97,82991.97,Daily card sales,C03,normal,satisfied,no
+TXN0277,2026-02-27,21:42,sale,cash,in,Walk-in customers,CASH-20260227,79730.24,79730.24,Daily cash sales,C01,normal,satisfied,no
+TXN0278,2026-02-28,21:08,sale,card,in,Walk-in customers,POS-20260228,125930.56,125930.56,Daily card sales,C01,normal,satisfied,no
+TXN0279,2026-02-28,21:18,sale,cash,in,Walk-in customers,CASH-20260228,65742.32,65742.32,Daily cash sales,C03,normal,satisfied,no
+TXN0280,2026-03-01,09:17,supplier_payment,bank_transfer,out,Harbour Properties,RENT-202603,250000.00,250000.00,Monthly shop rent,A01,normal,satisfied,no
+TXN0281,2026-03-01,21:09,refund,cash,out,Customer refund,REF-0013,18590.20,0.00,Customer refund - returned item,C03,unauthorized_refund,investigate,no
+TXN0282,2026-03-01,21:11,sale,cash,in,Walk-in customers,CASH-20260301,49077.80,49077.80,Daily cash sales,C03,normal,satisfied,no
+TXN0283,2026-03-01,21:36,sale,card,in,Walk-in customers,POS-20260301,51054.79,51054.79,Daily card sales,C02,normal,satisfied,no
+TXN0284,2026-03-02,10:10,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260301,50288.97,50288.97,Card settlement,BANK,normal,satisfied,no
+TXN0285,2026-03-02,10:25,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260227,81747.09,81747.09,Card settlement,BANK,normal,satisfied,no
+TXN0286,2026-03-02,10:25,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260228,124041.60,124041.60,Card settlement,BANK,normal,satisfied,no
+TXN0287,2026-03-02,12:22,bank_transfer,bank_transfer,out,Ridgeway Ventures,TRF-0002,2741307.07,0.00,Funds transfer,A01,large_transfer,investigate,no
+TXN0288,2026-03-02,12:38,bank_transfer,cash,in,Own account (cash deposit),CASH-20260227,79730.24,79730.24,Cash deposit,A01,normal,satisfied,no
+TXN0289,2026-03-02,13:27,bank_transfer,cash,in,Own account (cash deposit),CASH-20260301,49077.80,49077.80,Cash deposit,A01,normal,satisfied,no
+TXN0290,2026-03-02,13:35,bank_transfer,cash,in,Own account (cash deposit),CASH-20260228,65742.32,65742.32,Cash deposit,A01,normal,satisfied,no
+TXN0291,2026-03-02,21:13,sale,cash,in,Walk-in customers,CASH-20260302,70128.65,70128.65,Daily cash sales,C02,normal,satisfied,no
+TXN0292,2026-03-02,21:37,sale,card,in,Walk-in customers,POS-20260302,81750.82,81750.82,Daily card sales,C03,normal,satisfied,no
+TXN0293,2026-03-03,09:59,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260302,80524.56,80524.56,Card settlement,BANK,normal,satisfied,no
+TXN0294,2026-03-03,12:44,bank_transfer,cash,in,Own account (cash deposit),CASH-20260302,70128.65,70128.65,Cash deposit,A01,normal,satisfied,no
+TXN0295,2026-03-03,21:10,sale,card,in,Walk-in customers,POS-20260303,104660.73,104660.73,Daily card sales,C03,normal,satisfied,no
+TXN0296,2026-03-03,21:32,sale,cash,in,Walk-in customers,CASH-20260303,48184.28,48184.28,Daily cash sales,C02,normal,satisfied,no
+TXN0297,2026-03-04,09:36,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260303,103090.82,103090.82,Card settlement,BANK,normal,satisfied,no
+TXN0298,2026-03-04,10:43,bank_transfer,cash,in,Own account (cash deposit),CASH-20260303,48184.28,48184.28,Cash deposit,A01,normal,satisfied,no
+TXN0299,2026-03-04,14:11,supplier_payment,bank_transfer,out,Anees_Mobiles,SINV-0022,38907.93,38907.93,Supplier invoice payment,A01,normal,satisfied,no
+TXN0300,2026-03-04,15:26,supplier_payment,bank_transfer,out,Apple_LTD,SINV-0021,101146.65,101146.65,Supplier invoice payment,A01,normal,satisfied,no
+TXN0301,2026-03-04,21:15,sale,card,in,Walk-in customers,POS-20260304,92529.68,92529.68,Daily card sales,C03,normal,satisfied,no
+TXN0302,2026-03-04,21:21,sale,cash,in,Walk-in customers,CASH-20260304,48090.52,48090.52,Daily cash sales,C01,normal,satisfied,no
+TXN0303,2026-03-05,09:28,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260304,91141.73,91141.73,Card settlement,BANK,normal,satisfied,no
+TXN0304,2026-03-05,12:38,bank_transfer,cash,in,Own account (cash deposit),CASH-20260304,48090.52,48090.52,Cash deposit,A01,normal,satisfied,no
+TXN0305,2026-03-05,21:02,sale,cash,in,Walk-in customers,CASH-20260305,67357.68,67357.68,Daily cash sales,C01,normal,satisfied,no
+TXN0306,2026-03-05,21:30,sale,card,in,Walk-in customers,POS-20260305,85471.56,85471.56,Daily card sales,C03,normal,satisfied,no
+TXN0307,2026-03-06,09:58,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260305,84189.49,84189.49,Card settlement,BANK,normal,satisfied,no
+TXN0308,2026-03-06,10:37,bank_transfer,cash,in,Own account (cash deposit),CASH-20260305,67357.68,67357.68,Cash deposit,A01,normal,satisfied,no
+TXN0309,2026-03-06,21:12,sale,cash,in,Walk-in customers,CASH-20260306,50469.74,50469.74,Daily cash sales,C03,normal,satisfied,no
+TXN0310,2026-03-06,21:44,sale,card,in,Walk-in customers,POS-20260306,107993.30,107993.30,Daily card sales,C02,normal,satisfied,no
+TXN0311,2026-03-07,21:00,sale,cash,in,Walk-in customers,CASH-20260307,78795.00,78795.00,Daily cash sales,C01,normal,satisfied,no
+TXN0312,2026-03-07,21:27,sale,card,in,Walk-in customers,POS-20260307,145535.38,145535.38,Daily card sales,C01,normal,satisfied,no
+TXN0313,2026-03-08,13:50,refund,cash,out,Customer refund,REF-0008,2016.49,2016.49,Customer refund - returned item,C02,normal,satisfied,no
+TXN0314,2026-03-08,20:48,refund,cash,out,Customer refund,REF-0017,14133.63,0.00,Customer refund - returned item,C03,unauthorized_refund,investigate,no
+TXN0315,2026-03-08,21:03,sale,cash,in,Walk-in customers,CASH-20260308,47396.55,47396.55,Daily cash sales,C03,normal,satisfied,no
+TXN0316,2026-03-08,21:15,sale,card,in,Walk-in customers,POS-20260308,53594.06,53594.06,Daily card sales,C01,normal,satisfied,no
+TXN0317,2026-03-09,09:17,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260308,52790.15,52790.15,Card settlement,BANK,normal,satisfied,no
+TXN0318,2026-03-09,09:51,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260306,106373.40,106373.40,Card settlement,BANK,normal,satisfied,no
+TXN0319,2026-03-09,10:42,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260307,143352.35,143352.35,Card settlement,BANK,normal,satisfied,no
+TXN0320,2026-03-09,11:30,bank_transfer,cash,in,Own account (cash deposit),CASH-20260307,78795.00,78795.00,Cash deposit,A01,normal,satisfied,no
+TXN0321,2026-03-09,13:53,bank_transfer,cash,in,Own account (cash deposit),CASH-20260308,47396.55,47396.55,Cash deposit,A01,normal,satisfied,no
+TXN0322,2026-03-09,14:13,bank_transfer,cash,in,Own account (cash deposit),CASH-20260306,50469.74,50469.74,Cash deposit,A01,normal,satisfied,no
+TXN0323,2026-03-09,21:20,sale,card,in,Walk-in customers,POS-20260309,69667.31,69667.31,Daily card sales,C02,normal,satisfied,no
+TXN0324,2026-03-09,21:35,sale,cash,in,Walk-in customers,CASH-20260309,70654.07,70654.07,Daily cash sales,C03,normal,satisfied,no
+TXN0325,2026-03-10,09:54,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260309,68622.30,68622.30,Card settlement,BANK,normal,satisfied,no
+TXN0326,2026-03-10,14:18,bank_transfer,cash,in,Own account (cash deposit),CASH-20260309,70654.07,70654.07,Cash deposit,A01,normal,satisfied,no
+TXN0327,2026-03-10,21:10,sale,cash,in,Walk-in customers,CASH-20260310,72331.41,72331.41,Daily cash sales,C03,normal,satisfied,no
+TXN0328,2026-03-10,21:30,sale,card,in,Walk-in customers,POS-20260310,75164.69,75164.69,Daily card sales,C02,normal,satisfied,no
+TXN0329,2026-03-11,10:36,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260310,74037.22,74037.22,Card settlement,BANK,normal,satisfied,no
+TXN0330,2026-03-11,11:34,supplier_payment,bank_transfer,out,Anees_Mobiles,SINV-0024,31689.92,31689.92,Supplier invoice payment,A01,normal,satisfied,no
+TXN0331,2026-03-11,12:12,bank_transfer,cash,in,Own account (cash deposit),CASH-20260310,72331.41,72331.41,Cash deposit,A01,normal,satisfied,no
+TXN0332,2026-03-11,12:54,supplier_payment,bank_transfer,out,Apple_LTD,SINV-0023,112668.79,112668.79,Supplier invoice payment,A01,normal,satisfied,no
+TXN0333,2026-03-11,21:33,sale,cash,in,Walk-in customers,CASH-20260311,65296.53,65296.53,Daily cash sales,C02,normal,satisfied,no
+TXN0334,2026-03-11,21:40,sale,card,in,Walk-in customers,POS-20260311,120644.42,120644.42,Daily card sales,C01,normal,satisfied,no
+TXN0335,2026-03-12,10:31,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260311,117195.14,118834.76,Card settlement,BANK,fee_difference,review,no
+TXN0336,2026-03-12,12:20,bank_transfer,cash,in,Own account (cash deposit),CASH-20260311,65296.53,65296.53,Cash deposit,A01,normal,satisfied,no
+TXN0337,2026-03-12,21:05,sale,card,in,Walk-in customers,POS-20260312,108974.11,108974.11,Daily card sales,C01,normal,satisfied,no
+TXN0338,2026-03-12,21:20,sale,cash,in,Walk-in customers,CASH-20260312,62872.81,62872.81,Daily cash sales,C03,normal,satisfied,no
+TXN0339,2026-03-13,04:28,bank_transfer,bank_transfer,out,Blue Harbour Traders,TRF-0005,756299.86,0.00,Funds transfer,A01,off_hours_transfer,investigate,no
+TXN0340,2026-03-13,09:29,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260312,107339.50,107339.50,Card settlement,BANK,normal,satisfied,no
+TXN0341,2026-03-13,11:17,bank_transfer,cash,in,Own account (cash deposit),CASH-20260312,62872.81,62872.81,Cash deposit,A01,normal,satisfied,no
+TXN0342,2026-03-13,11:41,refund,cash,out,Customer refund,REF-0002,4243.34,4243.34,Customer refund - returned item,C01,normal,satisfied,no
+TXN0343,2026-03-13,21:13,sale,cash,in,Walk-in customers,CASH-20260313,59873.03,59873.03,Daily cash sales,C01,normal,satisfied,no
+TXN0344,2026-03-13,21:26,sale,card,in,Walk-in customers,POS-20260313,101950.64,101950.64,Daily card sales,C02,normal,satisfied,no
+TXN0345,2026-03-14,14:54,supplier_payment,bank_transfer,out,Anees_Mobiles,SINV-0024,31689.92,0.00,Supplier invoice payment,A01,duplicate_payment,investigate,no
+TXN0346,2026-03-14,21:26,sale,cash,in,Walk-in customers,CASH-20260314,72954.39,72954.39,Daily cash sales,C02,normal,satisfied,no
+TXN0347,2026-03-14,21:37,sale,card,in,Walk-in customers,POS-20260314,115645.65,115645.65,Daily card sales,C03,normal,satisfied,no
+TXN0348,2026-03-15,21:22,sale,card,in,Walk-in customers,POS-20260315,47361.92,47361.92,Daily card sales,C02,normal,satisfied,no
+TXN0349,2026-03-15,21:30,sale,cash,in,Walk-in customers,CASH-20260315,45899.16,45899.16,Daily cash sales,C01,normal,satisfied,no
+TXN0350,2026-03-16,10:09,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260313,100421.38,100421.38,Card settlement,BANK,normal,satisfied,no
+TXN0351,2026-03-16,10:10,bank_transfer,cash,in,Own account (cash deposit),CASH-20260314,72954.39,72954.39,Cash deposit,A01,normal,satisfied,no
+TXN0352,2026-03-16,10:49,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260314,113910.96,113910.96,Card settlement,BANK,normal,satisfied,no
+TXN0353,2026-03-16,10:49,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260315,46651.50,46651.50,Card settlement,BANK,normal,satisfied,no
+TXN0354,2026-03-16,12:49,bank_transfer,cash,in,Own account (cash deposit),CASH-20260313,59873.03,59873.03,Cash deposit,A01,normal,satisfied,no
+TXN0355,2026-03-16,13:19,bank_transfer,cash,in,Own account (cash deposit),CASH-20260315,45899.16,45899.16,Cash deposit,A01,normal,satisfied,no
+TXN0356,2026-03-16,21:34,sale,cash,in,Walk-in customers,CASH-20260316,82722.73,82722.73,Daily cash sales,C03,normal,satisfied,no
+TXN0357,2026-03-16,21:34,sale,card,in,Walk-in customers,POS-20260316,73465.68,73465.68,Daily card sales,C03,normal,satisfied,no
+TXN0358,2026-03-17,10:02,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260316,72363.69,72363.69,Card settlement,BANK,normal,satisfied,no
+TXN0359,2026-03-17,11:52,bank_transfer,cash,in,Own account (cash deposit),CASH-20260316,82722.73,82722.73,Cash deposit,A01,normal,satisfied,no
+TXN0360,2026-03-17,21:01,sale,cash,in,Walk-in customers,CASH-20260317,67451.71,67451.71,Daily cash sales,C02,normal,satisfied,no
+TXN0361,2026-03-17,21:21,sale,card,in,Walk-in customers,POS-20260317,113904.96,113904.96,Daily card sales,C03,normal,satisfied,no
+TXN0362,2026-03-18,10:32,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260317,112196.38,112196.38,Card settlement,BANK,normal,satisfied,no
+TXN0363,2026-03-18,10:37,supplier_payment,bank_transfer,out,Keele_Gadgets,SINV-0026,73622.99,73622.99,Supplier invoice payment,A01,normal,satisfied,no
+TXN0364,2026-03-18,13:27,bank_transfer,cash,in,Own account (cash deposit),CASH-20260317,48821.37,67451.71,Cash deposit,A01,unexplained_shortfall,investigate,no
+TXN0365,2026-03-18,14:11,supplier_payment,bank_transfer,out,Argos,SINV-0025,95543.07,95543.07,Supplier invoice payment,A01,normal,satisfied,no
+TXN0366,2026-03-18,18:01,refund,card,out,Customer refund,REF-0005,3338.33,3338.33,Customer refund - returned item,C01,normal,satisfied,no
+TXN0367,2026-03-18,21:08,sale,cash,in,Walk-in customers,CASH-20260318,71853.33,71853.33,Daily cash sales,C03,normal,satisfied,no
+TXN0368,2026-03-18,21:34,sale,card,in,Walk-in customers,POS-20260318,112393.67,112393.67,Daily card sales,C01,normal,satisfied,no
+TXN0369,2026-03-19,10:15,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260318,110707.77,110707.77,Card settlement,BANK,normal,satisfied,no
+TXN0370,2026-03-19,11:16,refund,cash,out,Customer refund,REF-0004,2282.16,2282.16,Customer refund - returned item,C01,normal,satisfied,no
+TXN0371,2026-03-19,13:21,bank_transfer,cash,in,Own account (cash deposit),CASH-20260318,71853.33,71853.33,Cash deposit,A01,normal,satisfied,no
+TXN0372,2026-03-19,15:25,supplier_payment,bank_transfer,out,Omega Consulting,N/A,153994.29,0.00,Service payment,A01,unmatched_payment,investigate,no
+TXN0373,2026-03-19,21:08,sale,card,in,Walk-in customers,POS-20260319,93339.03,93339.03,Daily card sales,C02,normal,satisfied,no
+TXN0374,2026-03-19,21:41,sale,cash,in,Walk-in customers,CASH-20260319,62414.08,62414.08,Daily cash sales,C02,normal,satisfied,no
+TXN0375,2026-03-20,09:06,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260319,91938.94,91938.94,Card settlement,BANK,normal,satisfied,no
+TXN0376,2026-03-20,11:33,bank_transfer,cash,in,Own account (cash deposit),CASH-20260319,62414.08,62414.08,Cash deposit,A01,normal,satisfied,no
+TXN0377,2026-03-20,12:22,supplier_payment,bank_transfer,out,QuickFix Maintenance,N/A,65408.48,0.00,Service payment,A01,unmatched_payment,investigate,no
+TXN0378,2026-03-20,21:21,sale,card,in,Walk-in customers,POS-20260320,110997.16,110997.16,Daily card sales,C02,normal,satisfied,no
+TXN0379,2026-03-20,21:29,sale,cash,in,Walk-in customers,CASH-20260320,64318.51,64318.51,Daily cash sales,C02,normal,satisfied,no
+TXN0380,2026-03-21,14:49,refund,card,out,Customer refund,REF-0006,2541.64,2541.64,Customer refund - returned item,C01,normal,satisfied,no
+TXN0381,2026-03-21,21:01,sale,card,in,Walk-in customers,POS-20260321,107178.65,107178.65,Daily card sales,C03,normal,satisfied,no
+TXN0382,2026-03-21,21:05,sale,cash,in,Walk-in customers,CASH-20260321,92364.86,92364.86,Daily cash sales,C02,normal,satisfied,no
+TXN0383,2026-03-22,21:41,sale,cash,in,Walk-in customers,CASH-20260322,45682.61,45682.61,Daily cash sales,C01,normal,satisfied,no
+TXN0384,2026-03-22,21:41,sale,card,in,Walk-in customers,POS-20260322,56994.19,56994.19,Daily card sales,C01,normal,satisfied,no
+TXN0385,2026-03-23,09:06,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260321,105570.97,105570.97,Card settlement,BANK,normal,satisfied,no
+TXN0386,2026-03-23,09:31,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260322,56139.28,56139.28,Card settlement,BANK,normal,satisfied,no
+TXN0387,2026-03-23,10:15,bank_transfer,cash,in,Own account (cash deposit),CASH-20260322,45682.61,45682.61,Cash deposit,A01,normal,satisfied,no
+TXN0388,2026-03-23,10:36,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260320,109332.20,109332.20,Card settlement,BANK,normal,satisfied,no
+TXN0389,2026-03-23,12:22,bank_transfer,cash,in,Own account (cash deposit),CASH-20260320,64318.51,64318.51,Cash deposit,A01,normal,satisfied,no
+TXN0390,2026-03-23,14:36,bank_transfer,cash,in,Own account (cash deposit),CASH-20260321,92364.86,92364.86,Cash deposit,A01,normal,satisfied,no
+TXN0391,2026-03-23,21:08,sale,card,in,Walk-in customers,POS-20260323,98469.42,98469.42,Daily card sales,C02,normal,satisfied,no
+TXN0392,2026-03-23,21:09,sale,cash,in,Walk-in customers,CASH-20260323,65761.81,65761.81,Daily cash sales,C01,normal,satisfied,no
+TXN0393,2026-03-24,09:27,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260323,95413.40,96992.38,Card settlement,BANK,fee_difference,review,no
+TXN0394,2026-03-24,10:58,bank_transfer,cash,in,Own account (cash deposit),CASH-20260323,65761.81,65761.81,Cash deposit,A01,normal,satisfied,no
+TXN0395,2026-03-24,21:23,sale,cash,in,Walk-in customers,CASH-20260324,55988.31,55988.31,Daily cash sales,C01,normal,satisfied,no
+TXN0396,2026-03-24,21:38,sale,card,in,Walk-in customers,POS-20260324,98018.50,98018.50,Daily card sales,C03,normal,satisfied,no
+TXN0397,2026-03-25,10:39,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260324,96548.22,96548.22,Card settlement,BANK,normal,satisfied,no
+TXN0398,2026-03-25,10:43,supplier_payment,bank_transfer,out,Side_Quest_electronics,SINV-0027,236589.02,236589.02,Supplier invoice payment,A01,normal,satisfied,no
+TXN0399,2026-03-25,10:58,bank_transfer,cash,in,Own account (cash deposit),CASH-20260324,55988.31,55988.31,Cash deposit,A01,normal,satisfied,no
+TXN0400,2026-03-25,12:07,supplier_payment,bank_transfer,out,Nokia_Retails,SINV-0028,8948.97,8948.97,Supplier invoice payment,A01,normal,satisfied,no
+TXN0401,2026-03-25,21:01,sale,card,in,Walk-in customers,POS-20260325,52790.68,52790.68,Daily card sales,C02,normal,satisfied,no
+TXN0402,2026-03-25,21:06,sale,cash,in,Walk-in customers,CASH-20260325,78090.86,78090.86,Daily cash sales,C03,normal,satisfied,no
+TXN0403,2026-03-26,10:26,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260325,51998.82,51998.82,Card settlement,BANK,normal,satisfied,no
+TXN0404,2026-03-26,14:54,bank_transfer,cash,in,Own account (cash deposit),CASH-20260325,78090.86,78090.86,Cash deposit,A01,normal,satisfied,no
+TXN0405,2026-03-26,21:12,sale,cash,in,Walk-in customers,CASH-20260326,74750.34,74750.34,Daily cash sales,C01,normal,satisfied,no
+TXN0406,2026-03-26,21:37,sale,card,in,Walk-in customers,POS-20260326,85461.90,85461.90,Daily card sales,C03,normal,satisfied,no
+TXN0407,2026-03-27,09:13,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260326,84179.97,84179.97,Card settlement,BANK,normal,satisfied,no
+TXN0408,2026-03-27,12:04,bank_transfer,cash,in,Own account (cash deposit),CASH-20260326,74750.34,74750.34,Cash deposit,A01,normal,satisfied,no
+TXN0409,2026-03-27,21:07,sale,card,in,Walk-in customers,POS-20260327,80580.83,80580.83,Daily card sales,C03,normal,satisfied,no
+TXN0410,2026-03-27,21:43,sale,cash,in,Walk-in customers,CASH-20260327,61688.08,61688.08,Daily cash sales,C03,normal,satisfied,no
+TXN0411,2026-03-28,21:04,sale,cash,in,Walk-in customers,CASH-20260328,57251.19,57251.19,Daily cash sales,C03,normal,satisfied,no
+TXN0412,2026-03-28,21:41,sale,card,in,Walk-in customers,POS-20260328,107504.66,107504.66,Daily card sales,C02,normal,satisfied,no
+TXN0413,2026-03-29,21:23,sale,cash,in,Walk-in customers,CASH-20260329,31338.39,31338.39,Daily cash sales,C03,normal,satisfied,no
+TXN0414,2026-03-29,21:29,sale,card,in,Walk-in customers,POS-20260329,57708.42,57708.42,Daily card sales,C03,normal,satisfied,no
+TXN0415,2026-03-30,09:44,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260327,79372.12,79372.12,Card settlement,BANK,normal,satisfied,no
+TXN0416,2026-03-30,09:55,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260329,56842.79,56842.79,Card settlement,BANK,normal,satisfied,no
+TXN0417,2026-03-30,10:06,bank_transfer,cash,in,Own account (cash deposit),CASH-20260328,57251.19,57251.19,Cash deposit,A01,normal,satisfied,no
+TXN0418,2026-03-30,10:21,bank_transfer,cash,in,Own account (cash deposit),CASH-20260327,61688.08,61688.08,Cash deposit,A01,normal,satisfied,no
+TXN0419,2026-03-30,10:45,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260328,103563.36,105892.09,Card settlement,BANK,fee_difference,review,no
+TXN0420,2026-03-30,11:18,bank_transfer,cash,in,Own account (cash deposit),CASH-20260329,31338.39,31338.39,Cash deposit,A01,normal,satisfied,no
+TXN0421,2026-03-30,21:39,sale,card,in,Walk-in customers,POS-20260330,114550.15,114550.15,Daily card sales,C03,normal,satisfied,no
+TXN0422,2026-03-30,21:41,sale,cash,in,Walk-in customers,CASH-20260330,71524.01,71524.01,Daily cash sales,C02,normal,satisfied,no
+TXN0423,2026-03-31,02:13,bank_transfer,bank_transfer,out,Nova Capital Ltd,TRF-0004,697550.12,0.00,Funds transfer,A01,off_hours_transfer,investigate,no
+TXN0424,2026-03-31,09:59,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260330,112831.90,112831.90,Card settlement,BANK,normal,satisfied,no
+TXN0425,2026-03-31,14:07,bank_transfer,cash,in,Own account (cash deposit),CASH-20260330,71524.01,71524.01,Cash deposit,A01,normal,satisfied,no
+TXN0426,2026-03-31,21:15,sale,card,in,Walk-in customers,POS-20260331,106488.28,106488.28,Daily card sales,C01,normal,satisfied,no
+TXN0427,2026-03-31,21:17,sale,cash,in,Walk-in customers,CASH-20260331,47124.69,47124.69,Daily cash sales,C02,normal,satisfied,no
+TXN0428,2026-04-01,10:52,bank_transfer,bank_transfer,in,PayGate Card Processor,POS-20260331,104890.95,104890.95,Card settlement,BANK,normal,satisfied,no
+TXN0429,2026-04-01,12:22,bank_transfer,cash,in,Own account (cash deposit),CASH-20260331,47124.69,47124.69,Cash deposit,A01,normal,satisfied,no
