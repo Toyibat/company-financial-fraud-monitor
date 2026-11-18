@@ -37,3 +37,20 @@ def find_by_id(records, text):
         return None, 0
     index, comparisons = binary_search(records, number)
     return (records[index] if index >= 0 else None), comparisons
+
+# for matching using dictionary, we need to check if a record has a reference, and then group records by reference.
+
+def has_reference(record):
+    reference = record["reference"].strip()
+    return reference not in ("", "N/A")
+
+
+def match_by_reference(records):
+    """Dictionary: reference - list of records sharing it.
+    A sale and thebank settlement will share a reference, same as an invoice and
+    each payment made against it."""
+    groups = {}
+    for record in records:
+        if has_reference(record):
+            groups.setdefault(record["reference"], []).append(record)
+    return groups
