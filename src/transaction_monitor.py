@@ -1,5 +1,5 @@
 from datetime import datetime
-from data_manager import id_key
+from .data_manager import id_key
 
 def parse_id_number(text): 
 
@@ -54,3 +54,31 @@ def match_by_reference(records):
         if has_reference(record):
             groups.setdefault(record["reference"], []).append(record)
     return groups
+
+MISMATCH_TOLERANCE = 0.005
+# date and time to help
+def to_date(record):
+    return datetime.strptime(record["date"], "%Y-%m-%d").date()
+
+def minutes_after_midnight(record):
+    hours, minutes = record["time"].split(":")
+    return int(hours) * 60 + int(minutes)
+
+# checking for anomalies in the records like amount mismatches or missing expected records.
+def check_amount_mismatch(records):
+    """check if recorded/stored amount differs from the expected amount."""
+    for r in records:
+        if r["expected_amount"] > 0:
+            difference = r["amount"] - r["expected_amount"]
+            if abs(difference) > MISMATCH_TOLERANCE:
+                percent = difference / r["expected_amount"] * 100
+                yield (r, "amount_mismatch",
+                       f"recorded {r['amount']:,.2f} but expected "
+                       f"{r['expected_amount']:,.2f} ({percent:+.1f}%)")
+
+def check_no_expected_record(records):
+    """Money moved with nothing to explain it."""
+    for r in records:
+        if r["expected_amount"] == 0 and r["amount"] > 0:
+            yield (r, "no_expected_record",
+                   f"{r['amount']:,.2f} recorded with no matching expected amount")
